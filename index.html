@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Paws · Peluquería canina con reservas online</title>
+  <meta name="description" content="Reserva baños, cortes y spa para tu perro en pocos minutos. Historial, pagos y anulación con un click.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body data-page="index">
+  <div class="page-shell">
+    <header class="sticky top-0 z-40 border-b border-white/70 bg-white/90 backdrop-blur" data-nav></header>
+    <main class="main-content">
+      <section class="hero-visual">
+        <div class="mx-auto grid min-h-[640px] max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.05fr_.95fr] lg:px-8">
+          <div class="max-w-3xl text-white">
+            <p class="text-sm font-black uppercase tracking-wide text-rose-100">Happy Paws · Peluquería canina</p>
+            <h1 class="mt-4 text-5xl font-black leading-none sm:text-6xl lg:text-7xl">Su mejor versión,<br><span class="text-rose-100">sin apuros.</span></h1>
+            <p class="mt-6 max-w-2xl text-lg font-medium leading-8 text-emerald-50">Agenda baños, cortes, spa y cuidados esenciales con confirmación inmediata, historial de citas y pago simulado dentro del template.</p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a class="btn-coral" href="reservar.html">Reservar cita</a>
+              <a class="btn-secondary" href="servicios.html">Ver servicios</a>
+              <a class="btn-muted" href="galeria.html">Ver galería</a>
+            </div>
+            <div class="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm font-bold text-white/90">
+              <span>✓ Atención personalizada</span>
+              <span>✓ Productos suaves</span>
+              <span>✓ Sin apuros</span>
+            </div>
+          </div>
+          <div class="card bg-white/95 p-6">
+            <p class="text-sm font-black uppercase tracking-wide text-rose-500">Cita destacada</p>
+            <h2 class="mt-2 text-3xl font-black text-slate-900">Spa Completo</h2>
+            <p class="mt-3 text-slate-600">Baño, corte, limpieza de oídos, uñas e hidratación para una visita 5 estrellas.</p>
+            <div class="mt-6 grid grid-cols-2 gap-3">
+              <div class="rounded-lg bg-emerald-50 p-4">
+                <p class="text-sm font-bold text-slate-500">Desde</p>
+                <p class="text-2xl font-black text-emerald-700">$28.990</p>
+              </div>
+              <div class="rounded-lg bg-rose-50 p-4">
+                <p class="text-sm font-bold text-slate-500">Duración</p>
+                <p class="text-2xl font-black text-rose-500">120 min</p>
+              </div>
+            </div>
+            <a class="btn-primary mt-6 w-full" href="reservar.html?service=spa">Reservar spa</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p class="font-black uppercase tracking-wide text-emerald-700">Servicios favoritos</p>
+            <h2 class="section-title mt-2">Cuidados para cada pelaje</h2>
+          </div>
+          <a class="btn-secondary" href="servicios.html">Lista completa</a>
+        </div>
+        <div id="featured-services" class="mt-8 grid gap-5 md:grid-cols-3"></div>
+      </section>
+
+      <section class="soft-band">
+        <div class="mx-auto grid max-w-6xl gap-8 px-4 py-16 sm:px-6 lg:grid-cols-3 lg:px-8">
+          <div class="lg:col-span-1">
+            <p class="font-black uppercase tracking-wide text-emerald-700">¿Cómo funciona?</p>
+            <h2 class="section-title mt-2">De la agenda<br>a la colita feliz.</h2>
+            <p class="mt-5 text-lg leading-8 text-slate-600">Un proceso simple para que dediques menos tiempo a coordinar y más a disfrutar.</p>
+          </div>
+          <ol class="lg:col-span-2 grid gap-4 sm:grid-cols-3">
+            <li class="card p-6">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-500 text-lg font-black text-white">1</span>
+              <h3 class="mt-4 text-lg font-black text-slate-900">Cuéntanos sobre tu mascota</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">Tamaño, raza y cualquier detalle que debamos conocer.</p>
+            </li>
+            <li class="card p-6">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-rose-400 text-lg font-black text-white">2</span>
+              <h3 class="mt-4 text-lg font-black text-slate-900">Elige su momento</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">Selecciona servicio, fecha y horario disponible.</p>
+            </li>
+            <li class="card p-6">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-500 text-lg font-black text-white">3</span>
+              <h3 class="mt-4 text-lg font-black text-slate-900">Confirma y listo</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">Completa el pago demo y revisa todo desde tu perfil.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p class="font-black uppercase tracking-wide text-rose-500">Cursos para tutores</p>
+            <h2 class="section-title mt-2">Aprende a cuidarlo en casa</h2>
+          </div>
+          <a class="btn-secondary" href="clases.html">Ver todos los cursos</a>
+        </div>
+        <div id="featured-classes" class="mt-8 grid gap-5 md:grid-cols-3"></div>
+      </section>
+
+      <section class="soft-band-coral">
+        <div class="mx-auto grid max-w-7xl gap-8 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8">
+          <div>
+            <p class="font-black uppercase tracking-wide text-rose-500">Galería</p>
+            <h2 class="section-title mt-2">Antes y después</h2>
+            <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-600">Desliza el divisor para descubrir las transformaciones reales de nuestros clientes peludos.</p>
+            <a class="btn-coral mt-6" href="galeria.html">Ver galería completa</a>
+          </div>
+          <div id="featured-gallery" class="grid gap-4 sm:grid-cols-2"></div>
+        </div>
+      </section>
+
+      <section class="mx-auto grid max-w-7xl gap-8 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div>
+          <p class="font-black uppercase tracking-wide text-emerald-700">Agenda ordenada</p>
+          <h2 class="section-title mt-2">Reserva, paga y revisa tus citas</h2>
+          <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-600">El template incluye pantallas de autenticación, perfil, historial, detalle, anulación y pago simulado, todo conectado con datos locales.</p>
+          <a class="btn-primary mt-6" href="registro.html">Crear cuenta gratis</a>
+        </div>
+        <div class="card p-6">
+          <h3 class="text-2xl font-black text-slate-900">Horarios de atención</h3>
+          <div id="home-hours" class="mt-4"></div>
+          <a class="btn-secondary mt-6 w-full" href="contacto.html">Contactar</a>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t border-slate-200 bg-white" data-footer></footer>
+  </div>
+</body>
+</html>

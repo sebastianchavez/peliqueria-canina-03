@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Happy Paws</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body data-page="contacto">
+  <div class="page-shell">
+    <header class="sticky top-0 z-40 border-b border-white/70 bg-white/90 backdrop-blur" data-nav></header>
+    <main class="main-content">
+      <section class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <p class="font-black uppercase tracking-wide text-emerald-700">Estamos cerca</p>
+        <h1 class="section-title mt-2">Contáctanos</h1>
+        <p class="mt-3 max-w-2xl text-lg text-slate-600">¿Dudas, reagenda o comentario? Te leemos y respondemos en menos de 24 horas hábiles.</p>
+      </section>
+
+      <section class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_1fr] lg:px-8">
+        <form id="contact-form" class="card grid gap-4 p-6">
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label class="label" for="name">Nombre</label>
+              <input class="input" id="name" name="name" required placeholder="Tu nombre">
+            </div>
+            <div>
+              <label class="label" for="email">Correo</label>
+              <input class="input" id="email" name="email" type="email" required placeholder="correo@ejemplo.cl">
+            </div>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label class="label" for="phone">Teléfono</label>
+              <input class="input" id="phone" name="phone" placeholder="+56 9 1234 5678">
+            </div>
+            <div>
+              <label class="label" for="subject">Asunto</label>
+              <select class="select" id="subject" name="subject">
+                <option>Consulta general</option>
+                <option>Reserva y reagenda</option>
+                <option>Cursos para tutores</option>
+                <option>Felicitaciones</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label class="label" for="message">Mensaje</label>
+            <textarea class="textarea" id="message" name="message" rows="5" required placeholder="Cuéntanos en qué podemos ayudar"></textarea>
+          </div>
+          <button class="btn-primary" type="submit">Enviar mensaje</button>
+          <div id="contact-message" hidden></div>
+        </form>
+
+        <aside class="grid gap-5">
+          <div class="card p-6">
+            <p class="font-black uppercase tracking-wide text-rose-500">Ubicación</p>
+            <p class="mt-2 text-xl font-black text-slate-900">Av. Las Mascotas 1234</p>
+            <p class="text-slate-600">Santiago, Chile</p>
+            <iframe class="mt-4 h-56 w-full rounded-xl border-0" src="https://www.google.com/maps?q=Av.+Las+Mascotas+1234,+Santiago,+Chile&output=embed" loading="lazy" title="Mapa ubicación"></iframe>
+          </div>
+          <div class="card p-6">
+            <p class="font-black uppercase tracking-wide text-emerald-700">Horarios de atención</p>
+            <div id="contact-hours" class="mt-3"></div>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <a class="card flex flex-col p-5 hover:bg-emerald-50" href="tel:+56944440000">
+              <span class="text-2xl">📞</span>
+              <p class="mt-2 font-black text-slate-900">Llámanos</p>
+              <p class="text-sm text-slate-600">+56 9 4444 0000</p>
+            </a>
+            <a class="card flex flex-col p-5 hover:bg-rose-50" href="mailto:hola@happypaws.cl">
+              <span class="text-2xl">✉</span>
+              <p class="mt-2 font-black text-slate-900">Escríbenos</p>
+              <p class="text-sm text-slate-600">hola@happypaws.cl</p>
+            </a>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <footer class="border-t border-slate-200 bg-white" data-footer></footer>
+  </div>
+</body>
+</html>

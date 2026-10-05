@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuperar contraseña | Happy Paws</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body data-page="recuperar">
+  <div class="page-shell">
+    <header class="sticky top-0 z-40 border-b border-white/70 bg-white/90 backdrop-blur" data-nav></header>
+    <main class="main-content">
+      <section class="mx-auto max-w-2xl px-4 py-14 sm:px-6 lg:px-8">
+        <div class="card p-8 text-center">
+          <span class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100 text-3xl">🔑</span>
+          <h1 class="section-title mt-5">Recupera tu contraseña</h1>
+          <p class="mt-3 text-slate-600">Ingresa el correo asociado a tu cuenta y te enviaremos instrucciones para restablecerla.</p>
+          <form id="recovery-form" class="mt-6 grid gap-4 text-left">
+            <div>
+              <label class="label" for="email">Correo</label>
+              <input class="input" id="email" name="email" type="email" required placeholder="correo@ejemplo.cl">
+            </div>
+            <button class="btn-primary" type="submit">Enviar instrucciones</button>
+            <div id="auth-message" hidden></div>
+          </form>
+          <p class="mt-6 text-sm text-slate-600">
+            <a class="font-bold text-emerald-700" href="login.html">Volver a iniciar sesión</a>
+            <span class="mx-2 text-slate-400">·</span>
+            <a class="font-bold text-rose-500" href="registro.html">Crear cuenta nueva</a>
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t border-slate-200 bg-white" data-footer></footer>
+  </div>
+</body>
+</html>
